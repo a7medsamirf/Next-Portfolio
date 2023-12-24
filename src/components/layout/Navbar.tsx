@@ -1,10 +1,11 @@
 
 import React from 'react'
 import Link from 'next/link'
+import ThemeSwitcher from './ThemeSwitcher'
 function Navbar() {
   return (
-    <div>
-<header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800 sticky">
+    <>
+<header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full  text-sm py-4  top-0 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.1)]">
   <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
     <div className="flex items-center justify-between">
       <a className="flex-none" href="#">
@@ -23,12 +24,16 @@ function Navbar() {
     <div id="navbar-image-1" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
       <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
         <Link href="/" className='font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>Home</Link>
-        <Link href="/test" className='font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>test</Link>
-        <Link href="/about" className='font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>about</Link>
+        <Link href="/test" className='font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>Test</Link>
+        <Link href="/about" className='font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>About</Link>
 
-        <Link href="/posts" className='font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>posts</Link>
+        <Link href="/blog" className='font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>Blog</Link>
 
+        <Link href="/posts" className='font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>Posts</Link>
 
+        <Link href="/products" className='font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'>Products</Link>
+
+      <ThemeSwitcher />
   
       </div>
     </div>
@@ -36,7 +41,7 @@ function Navbar() {
 </header>
 
 
-    </div>
+    </>
   )
 }
 

@@ -1,29 +1,38 @@
+import React from 'react'
+import Head from 'next/head'
+import Image from 'next/image'
+import profilePic from "../../public/images/profile/developer-pic-1.png"
+import AnimatedText from '@/components/AnimatedText'
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-800 text-white hover:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 dark:bg-white dark:text-gray-800">
-  Button
-</button>
-<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-500 text-white hover:bg-gray-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-  Button
-</button>
-<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-500 text-white hover:bg-teal-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-  Button
-</button>
-<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-  Button
-</button>
-<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-  Button
-</button>
-<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-yellow-500 text-white hover:bg-yellow-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-  Button
-</button>
-<button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-white text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-  Button
-</button>
+const Home = () => {
+return (
+<>
 
-    </main>
-  )
+  <Head>
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+  </Head>
+
+
+  <main className="flex items-center text-dark w-full min-h-screen">
+    <div className="flex items-center justify-between w-full">
+      <div className='w-1/2'>
+        <Image src={profilePic} alt="CodeBucks" className='w-full h-auto' />
+      </div>
+      <div className='w-1/2'>
+        <AnimatedText  text="Turning Vision Into Reality With Code And Design." className='!text-6x1'/>
+
+                <p className='my-4 text-base font-medium md:text-sm sm:!text-xs'>
+          As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
+          Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+        </p>
+      </div>
+    </div>
+
+  </main>
+</>
+)
 }
+
+export default Home
