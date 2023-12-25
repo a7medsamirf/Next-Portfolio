@@ -1,17 +1,9 @@
-
-'use client'
 import React from 'react'
-import ThemeSwitcher from './ThemeSwitcher'
-import Logo from './Logo'
-import NavLinks from './NavLinks'
-const Navbar = () => {
 
+const Logo = () => {
   return (
     <>
-
-<header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full  text-sm px-32 py-8  top-0">
-  <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
-  <div className="flex items-center justify-between">
+     <div className="flex items-center justify-between">
       <a className="flex-none" href="#">
         <svg className="w-10 h-auto" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="100" height="100" rx="10" fill="black"/>
@@ -25,26 +17,8 @@ const Navbar = () => {
         </button>
       </div>
     </div>
-    
-{/*     <Logo /> */}
-
-    <div id="navbar-image-1" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
-      
-      <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-      
-      <NavLinks />
-     <ThemeSwitcher />
-      </div>
-
-    </div>
-
-  </nav>
-</header>
-
-
     </>
   )
 }
 
-export default Navbar
-
+export default Logo
