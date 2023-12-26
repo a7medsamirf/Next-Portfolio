@@ -2,7 +2,6 @@
 'use client'
 import React from 'react'
 import ThemeSwitcher from './ThemeSwitcher'
-import Logo from './Logo'
 import NavLinks from './NavLinks'
 const Navbar = () => {
 
@@ -26,7 +25,6 @@ const Navbar = () => {
       </div>
     </div>
     
-{/*     <Logo /> */}
 
     <div id="navbar-image-1" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
       

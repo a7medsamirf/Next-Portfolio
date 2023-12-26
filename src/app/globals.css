@@ -16,3 +16,20 @@
   }
 }
 
+nav a.link {
+  overflow: hidden;
+  position: relative;
+}
+
+
+nav a.link.active:before {
+  background: linear-gradient(90deg,#2a398c .9%,#8894da 63.63%,hsla(0,0%,100%,.4));
+  border-radius: 0.75rem;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: 100%;
+  transition: .3s ease-in-out!important;
+  width: 100%;
+}
+
